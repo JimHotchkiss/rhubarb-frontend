@@ -23,13 +23,15 @@ function MovieCards() {
       release_date={movie.release_date}
     />
   ))
-
+  // d-flex flex-row flex-wrap justify-content-between
   return (
-    <Container id='now-playing'>
-      <div className='d-flex flex-row flex-wrap justify-content-between'>
-        {movieCard}
-      </div>
-    </Container>
+    <section className='bg-dark'>
+      <Container id='now-playing' className='pt-4'>
+        <div className='d-flex flex-row flex-wrap justify-content-between'>
+          {movieCard}
+        </div>
+      </Container>
+    </section>
   )
 }
 

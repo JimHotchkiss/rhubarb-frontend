@@ -2,7 +2,7 @@ import React from "react"
 
 function Newsletter() {
   return (
-    <section className='bg-primary p-4 mb-4'>
+    <section className='bg-primary p-4'>
       <div className='container py-4'>
         <div className='row px-lg-0 px-md-2'>
           <div className='col-lg'>
