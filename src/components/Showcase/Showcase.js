@@ -12,13 +12,15 @@ function Showcase() {
               Everything <span className='text-warning'>Movies</span>
             </h1>
             <div style={{ marginRight: 4 }}>
-              <p className='lead my-4'>
+              <p className='lead my-4 pr-5'>
                 Here you can read reviews, see what's playing, and engage in
                 conversations ranging in movie topics from plot twist to hidden
                 meanings.
               </p>
             </div>
-            <Button size='lg'>Sign Up</Button>
+            <Button size='lg' style={{ width: "58%" }}>
+              Sign Up
+            </Button>
           </div>
           <Image
             src={MovieNight}
