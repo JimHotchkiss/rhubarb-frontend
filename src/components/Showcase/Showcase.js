@@ -2,7 +2,7 @@ import React from "react"
 import { Button, Image } from "react-bootstrap"
 import MovieNight from "./img/movie-night.svg"
 
-function Showcase() {
+function Showcase(props) {
   return (
     <section className='bg-dark text-light p-5 '>
       <div className='container'>
@@ -18,8 +18,11 @@ function Showcase() {
                 meanings.
               </p>
             </div>
-            <Button size='lg' style={{ width: "58%" }}>
-              Sign Up
+            <Button
+              size='lg'
+              style={{ width: "58%" }}
+              onClick={props.handleLogin}>
+              Login
             </Button>
           </div>
           <Image

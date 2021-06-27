@@ -7,10 +7,8 @@ function NavbarComponent() {
   return (
     <Navbar expand='lg' variant='dark' bg='dark'>
       <Container>
-        <Link to={`/`}>
-          <Navbar.Brand href='#'>
-            <h2 className='text-primary'>Rhubarb</h2>
-          </Navbar.Brand>
+        <Link className='navbar-brand' to={`/`}>
+          <h2 className='text-primary'>Rhubarb</h2>
         </Link>
         <Navbar.Toggle />
         <Navbar.Collapse id='responsive-navbar-nav'>

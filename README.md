@@ -24,3 +24,9 @@
     () Then use Link, from react-router-dom to change from page to page
 [] Create Footer component 
     () Add The Movie DB attribute
+[] Login 
+    () HandleLogin  
+        - Showcase component
+    () Render login form
+        - Register option
+        

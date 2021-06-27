@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 
 function ShowMovie(props) {
-  console.log(props.match.params.id)
   const [movieData, setMovieData] = useState({})
   const MOVIE_KEY = process.env.REACT_APP_MOVIE_API_KEY
 
@@ -13,7 +12,12 @@ function ShowMovie(props) {
       .then((data) => setMovieData(data))
   }, [])
 
-  return <div>{movieData.title}</div>
+  return (
+    <div>
+      {movieData.title}
+      {console.log(movieData)}
+    </div>
+  )
 }
 
 export default ShowMovie
